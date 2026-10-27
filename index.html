@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina Dental Studio | Premier Dental Clinic in Beverly Hills, CA</title>
+    <meta name="description" content="Lumina Dental Studio is a premier multi-speciality dental practice in Beverly Hills and Santa Monica, CA offering painless dentistry, Invisalign, dental implants, smile design, and advanced oral healthcare." />
+    <meta property="og:title" content="Lumina Dental Studio | Premier Dental Clinic in Beverly Hills, CA" />
+    <meta property="og:description" content="Lumina Dental Studio is a premier multi-speciality dental practice in Beverly Hills and Santa Monica, CA offering painless dentistry, Invisalign, dental implants, smile design, and advanced oral healthcare." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Make window.fetch writable with getter/setter to prevent Chrome extension errors
+      try {
+        let _activeFetch = window.fetch ? window.fetch.bind(window) : undefined;
+        Object.defineProperty(window, 'fetch', {
+          configurable: true,
+          enumerable: true,
+          get: function () {
+            return _activeFetch;
+          },
+          set: function (newFetch) {
+            _activeFetch = newFetch;
+          },
+        });
+      } catch (err) {}
+
+      // Prevent third-party browser extension errors from interrupting the applet
+      window.addEventListener('error', function (event) {
+        if (event.filename && event.filename.includes('chrome-extension://')) {
+          event.stopImmediatePropagation();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-[#FAFBFD] text-slate-800 antialiased selection:bg-teal-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

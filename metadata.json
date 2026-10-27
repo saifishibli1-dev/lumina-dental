@@ -1,0 +1,6 @@
+{
+  "name": "Lumina Dental Studio",
+  "description": "Lumina Dental Studio is a premier dental practice in Beverly Hills and Santa Monica, CA offering painless dentistry, Invisalign, dental implants, smile design, and advanced oral healthcare.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
